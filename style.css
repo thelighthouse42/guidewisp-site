@@ -1,0 +1,63 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, sans-serif;
+  color: #352c28;
+  background: #fcf6eb;
+}
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  min-height: 100svh;
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 0 clamp(1.5rem, 6vw, 3rem);
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+main {
+  align-self: center;
+  padding: 4rem 0;
+}
+
+.mark {
+  display: block;
+}
+
+h1 {
+  margin: 1rem 0;
+  font: 500 clamp(3rem, 10vw, 5.5rem)/1.05 Georgia, serif;
+  letter-spacing: -0.05em;
+}
+
+.intro {
+  max-width: 35rem;
+  margin: 0;
+  font-size: clamp(1.125rem, 3vw, 1.4rem);
+  line-height: 1.55;
+}
+
+.beta {
+  margin: 2rem 0 0.5rem;
+  color: #804020;
+  font-weight: 650;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 0.22em;
+}
+
+a:focus-visible {
+  outline: 2px solid #804020;
+  outline-offset: 4px;
+}
+
+footer {
+  border-top: 1px solid #dcceba;
+  padding: 1.25rem 0 1.75rem;
+  color: #64584e;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
