@@ -144,6 +144,8 @@ p { margin: 0 0 1em; }
   box-shadow: var(--shadow);
 }
 .button:hover { filter: brightness(1.08); }
+.button[aria-disabled="true"] { cursor: default; }
+.button[aria-disabled="true"]:hover { filter: none; }
 .button svg { width: 1.1em; height: 1.1em; flex: none; }
 .button.quiet {
   background: transparent;
