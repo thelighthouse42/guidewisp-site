@@ -1,0 +1,153 @@
+<!doctype html>
+<!-- Draft for Chris's review; not legal advice. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy · GuideWisp</title>
+  <meta name="description" content="What GuideWisp collects, what it never collects, and who helps answer your questions.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#fcf6eb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#17110d" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://guidewisp.com/privacy.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="GuideWisp">
+  <meta property="og:title" content="GuideWisp privacy policy">
+  <meta property="og:description" content="What GuideWisp collects, what it never collects, and who helps answer your questions.">
+  <meta property="og:url" content="https://guidewisp.com/privacy.html">
+  <meta property="og:image" content="https://guidewisp.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="GuideWisp home">
+        <img src="favicon.svg" alt="" width="34" height="34">
+        GuideWisp
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <a class="optional" href="index.html#how">How it works</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="index.html#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="doc">
+    <div class="wrap">
+      <h1>Privacy policy</h1>
+      <p class="updated">Last updated: November 10, 2026</p>
+
+      <div class="summary">
+        <h2 style="margin-top:0">The short version</h2>
+        <ul>
+          <li>You don't need an account. Each install gets an anonymous random install id.</li>
+          <li>To answer a question, it goes through our server to Anthropic (the AI model that writes the answer) and Tavily (web search).</li>
+          <li>Sharing anonymous usage is off until you choose to turn it on.</li>
+          <li>Answer reports are only sent when you tap Report.</li>
+          <li>We never collect your game account details, keys or screenshots.</li>
+          <li>Your settings are stored on your own PC.</li>
+        </ul>
+      </div>
+
+      <h2>Who we are</h2>
+      <p>GuideWisp is made by an independent solo developer. In this policy, &ldquo;GuideWisp&rdquo;, &ldquo;we&rdquo; and &ldquo;us&rdquo; mean the developer of GuideWisp. You can reach us any time at <a href="mailto:hello@guidewisp.com">hello@guidewisp.com</a>.</p>
+      <p>This policy covers the GuideWisp app for Windows and this website.</p>
+
+      <h2>When you ask a question</h2>
+      <p>To find your answer, the app sends the following to our server:</p>
+      <ul>
+        <li>your question, and the recent messages from the same conversation so follow-up questions make sense;</li>
+        <li>your edition and the player profile details you've filled in, such as faction, class, level and professions (and your character name or realm, if you entered them);</li>
+        <li>your anonymous install id, so we can count your questions against your plan's allowance.</li>
+      </ul>
+      <p>Our server runs on Supabase, hosted in the United States. It passes the question to the Anthropic API, which writes the answer, and to Tavily, which searches game guides and other public web pages. Our server keeps a count of how many questions each install id has asked and when, so it can apply plan limits. It doesn't save the text of your questions unless you turn on usage sharing or send a report (both described below).</p>
+      <p>Anthropic and Tavily process what they receive under their own terms and privacy policies.</p>
+
+      <h2>The optional screen read</h2>
+      <p>When the app starts, you can let it read your character details (like level, class and faction) from your screen to fill in your player profile. This happens on your PC. The screenshot never leaves your PC, and only the profile values you keep are used.</p>
+
+      <h2>Optional anonymous usage sharing</h2>
+      <p>Usage sharing is off until you choose to turn it on. If you do, the app sends us:</p>
+      <ul>
+        <li>your install id and app version;</li>
+        <li>the text of your questions;</li>
+        <li>which sources were used for each answer;</li>
+        <li>errors and timings.</li>
+      </ul>
+      <p>We use this to see what players ask, find answers that go wrong, and make GuideWisp better. You can turn it off at any time in the app's settings (&ldquo;Share anonymous usage&rdquo;).</p>
+
+      <h2>Answer reports</h2>
+      <p>If you tap <strong>Report a problem</strong> on an answer, the app sends us the question, the answer, its sources, your edition, faction and level, your app version, the reason you picked and any note you wrote. Nothing is sent unless you tap Report. Reports are read by hand so we can fix bad answers.</p>
+
+      <h2>What we never collect</h2>
+      <ul>
+        <li>Game account details.</li>
+        <li>Keys.</li>
+        <li>Screenshots.</li>
+      </ul>
+      <p>GuideWisp also never reads the game's memory and doesn't interact with the game client.</p>
+
+      <h2>What stays on your PC</h2>
+      <p>Your settings, including your player profile, are stored locally on your PC.</p>
+
+      <h2>Payments</h2>
+      <p>Paid plans aren't open yet. When they are, payments will be handled by Stripe. Stripe collects the payment details it needs under its own privacy policy, and we never see or store your full card number.</p>
+
+      <h2>Who helps us run GuideWisp</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Service</th><th>What it does for GuideWisp</th></tr></thead>
+          <tbody>
+            <tr><td>Supabase (United States)</td><td>Runs our server: passes questions along, counts usage, and stores usage sharing data and answer reports.</td></tr>
+            <tr><td>Anthropic</td><td>The AI model that writes each answer.</td></tr>
+            <tr><td>Tavily</td><td>Web search across game guides and other public pages.</td></tr>
+            <tr><td>Stripe</td><td>Payments, once paid plans open.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>We only share information with these services so they can do these jobs for us, or when the law requires it.</p>
+
+      <h2>How long we keep things</h2>
+      <p>We keep per-install usage counts, anonymous usage data (if you turned sharing on) and answer reports for 90 days, then delete them. Data you send in a support email is kept only as long as we need it to help you.</p>
+
+      <h2>Your choices</h2>
+      <ul>
+        <li>Leave usage sharing off, or turn it off at any time in settings.</li>
+        <li>Only send a report when you want to.</li>
+        <li>Skip the screen read and fill in your profile by hand, or leave it blank.</li>
+        <li>Email <a href="mailto:hello@guidewisp.com">hello@guidewisp.com</a> to ask what we hold about your install or to ask us to delete it. Because there's no account, we may need a few details to find it.</li>
+      </ul>
+
+      <h2>This website</h2>
+      <p>This website doesn't use cookies, analytics or trackers. Our web host may keep standard server logs, like any website.</p>
+
+      <h2>Children</h2>
+      <p>GuideWisp isn't meant for children under 13, and we don't knowingly collect information from them.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>If we change this policy, we'll update it here and change the date at the top. If a change matters, we'll also mention it in the app or on this website.</p>
+
+      <h2>Contact</h2>
+      <p>Questions about privacy? Email <a href="mailto:hello@guidewisp.com">hello@guidewisp.com</a>.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <ul class="footer-links">
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="refunds.html">Refunds</a></li>
+        <li><a href="mailto:hello@guidewisp.com">Contact</a></li>
+      </ul>
+      <p>GuideWisp is an independent tool and isn't affiliated with or endorsed by Blizzard Entertainment. World of Warcraft is a trademark of Blizzard Entertainment, Inc.</p>
+      <p>&copy; 2026 GuideWisp &middot; <a href="mailto:hello@guidewisp.com">hello@guidewisp.com</a></p>
+    </div>
+  </footer>
+</body>
+</html>

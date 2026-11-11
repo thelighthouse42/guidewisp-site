@@ -3,18 +3,261 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GuideWisp</title>
+  <title>GuideWisp: ask your WoW questions without leaving the game</title>
+  <meta name="description" content="Stuck on a quest? GuideWisp is a small Windows helper for World of Warcraft. Press a hotkey, ask in plain words, and get a short answer with links to the guides it came from.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#fcf6eb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#17110d" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://guidewisp.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="GuideWisp">
+  <meta property="og:title" content="GuideWisp: stuck on a quest? Ask without leaving the game.">
+  <meta property="og:description" content="A small Windows helper for World of Warcraft. Press a hotkey, ask, and get a short answer with its sources.">
+  <meta property="og:url" content="https://guidewisp.com/">
+  <meta property="og:image" content="https://guidewisp.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="The GuideWisp logo, a warm flame on a dark brown square, next to the GuideWisp name.">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <img class="mark" src="favicon.svg" alt="" width="54" height="54">
-    <h1>GuideWisp</h1>
-    <p class="intro">Ask your World of Warcraft questions without alt-tabbing: answers with sources, in a small overlay.</p>
-    <p class="beta">Free beta coming soon</p>
-    <a href="mailto:hello@guidewisp.com">hello@guidewisp.com</a>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="GuideWisp home">
+        <img src="favicon.svg" alt="" width="34" height="34">
+        GuideWisp
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <a class="optional" href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <img class="hero-logo" src="favicon.svg" alt="" width="64" height="64">
+          <span class="badge">Free beta coming soon</span>
+          <h1>Stuck on a quest? <span>Ask without leaving the game.</span></h1>
+          <p class="lede">GuideWisp is a small helper window for World of Warcraft. Press a hotkey, ask your question in plain words, and get a short answer with links to the guides it came from. Then get back to playing.</p>
+          <div class="cta-row">
+            <a class="button" role="link" aria-disabled="true" title="Coming soon">
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M10 2a1 1 0 0 1 1 1v8.6l2.8-2.8a1 1 0 1 1 1.4 1.4l-4.5 4.5a1 1 0 0 1-1.4 0L4.8 10.2a1 1 0 1 1 1.4-1.4L9 11.6V3a1 1 0 0 1 1-1Zm-6 14h12a1 1 0 1 1 0 2H4a1 1 0 1 1 0-2Z"/></svg>
+              Download the beta for Windows
+            </a>
+            <p class="cta-note">Download coming soon. Free during the beta. No add-on needed.</p>
+          </div>
+        </div>
+
+        <figure style="margin:0">
+          <div class="scene" role="img" aria-label="Illustration of the GuideWisp window. The player asks where to learn Expert Enchanting. The answer, in bold: Hgarth teaches Expert Enchanting, on a cliff above Sun Rock Retreat in Stonetalon Mountains. A hint explains how to reach him, two source links are shown, and a Find in game button sits under the answer.">
+            <div class="overlay" aria-hidden="true">
+              <div class="ov-bar">
+                <img src="favicon.svg" alt="" width="18" height="18">
+                <span class="ov-name">GuideWisp</span>
+                <span class="ov-chip">WoW: Forever</span>
+                <span class="ov-dots">&#8226;&#8226;&#8226;</span>
+              </div>
+              <div class="ov-body">
+                <div class="ov-q">Where can I learn Expert Enchanting?</div>
+                <div class="ov-a">
+                  <p><strong>Hgarth teaches Expert Enchanting, on a cliff above Sun Rock Retreat in Stonetalon Mountains.</strong></p>
+                  <div class="ov-hint"><b>How to find him:</b> he's easy to miss. Climb the path northeast of the largest tent.</div>
+                  <div class="ov-sources">
+                    <span class="ov-source"><span>1</span> wowhead.com</span>
+                    <span class="ov-source"><span>2</span> warcraft.wiki.gg</span>
+                  </div>
+                  <div class="ov-actions">
+                    <span class="ov-find">Find in game</span>
+                    <span class="ov-report">Report a problem</span>
+                  </div>
+                </div>
+              </div>
+              <div class="ov-input">Ask another question&hellip;</div>
+            </div>
+            <span class="edge-tab" aria-hidden="true"><img src="favicon.svg" alt="" width="16" height="16"></span>
+          </div>
+          <figcaption class="scene-caption">An example answer. When you're done, it tucks into a little tab on the edge of your screen.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section soft" id="how">
+      <div class="wrap">
+        <h2>How it works</h2>
+        <p class="section-intro">No alt-tabbing, no digging through ten browser tabs. Three steps and you're back in the game.</p>
+        <ol class="steps">
+          <li>
+            <h3>Press the hotkey</h3>
+            <p>GuideWisp slides out from the edge of your screen, right over the game. The default is <kbd>Ctrl+Shift+Q</kbd>.</p>
+          </li>
+          <li>
+            <h3>Ask your question</h3>
+            <p>Type it the way you'd ask a friend: &ldquo;Where is the Expert Enchanting trainer?&rdquo; Your player profile already tells it your edition, faction and level.</p>
+          </li>
+          <li>
+            <h3>Get a sourced answer</h3>
+            <p>In a few seconds you get a short answer, the key line in bold, and links to where it came from. Press the hotkey again and keep playing.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>Small things that help</h2>
+        <p class="section-intro">GuideWisp looks through the guides players already trust, like Wowhead, Icy Veins, warcraft.wiki.gg, the Blizzard forums and Reddit, and boils them down for you.</p>
+        <ul class="features">
+          <li><strong>Stays out of the way</strong><span>A compact window that tucks into a tab on the edge of your screen. Your hotkey brings it back.</span></li>
+          <li><strong>Knows your character</strong><span>Set your edition, faction, class, level and professions once. If you like, it can read them from your screen when it starts. That screenshot never leaves your PC.</span></li>
+          <li><strong>The answer first</strong><span>The line you need is in bold at the top, so you can glance and go.</span></li>
+          <li><strong>&ldquo;How to find them&rdquo;</strong><span>For NPCs tucked away in caves, towers and cliffs, you get a short hint on how to actually reach them.</span></li>
+          <li><strong>Find in game</strong><span>One click copies <code>/tar Name</code> and <code>/tm 7</code>, ready to paste into chat to target and mark the NPC once you're nearby.</span></li>
+          <li><strong>Report a problem</strong><span>If an answer is wrong, tap Report. Every report is read by a person, and it helps make the next answer better.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="wrap">
+        <div class="two-col">
+          <div class="panel">
+            <h2>What it's good at</h2>
+            <ul>
+              <li><strong>Quest objectives.</strong> <span>Where the thing is, what drops it, and what to do next.</span></li>
+              <li><strong>NPC and trainer locations.</strong> <span>Who teaches what, where they stand, and how to get there.</span></li>
+              <li><strong>Profession routes.</strong> <span>What to craft or gather at your skill level, and where to train up.</span></li>
+              <li><strong>Answers for your edition.</strong> <span>Classic Era and Retail can have very different answers. GuideWisp asks with your edition in mind.</span></li>
+            </ul>
+          </div>
+          <div class="panel wont">
+            <h2>What it won't do</h2>
+            <ul>
+              <li><strong>No automation.</strong> <span>It never presses keys, moves your character or plays for you.</span></li>
+              <li><strong>No memory reading.</strong> <span>It doesn't read or change the game's memory or files, and it doesn't touch the game client.</span></li>
+              <li><strong>No add-on.</strong> <span>It's a separate Windows app. Nothing to install in your game folder.</span></li>
+              <li><strong>No surprise pop-ups.</strong> <span>It only shows up when you call it.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="editions">
+      <div class="wrap">
+        <h2>Works with your edition</h2>
+        <p class="section-intro">Pick your edition in your player profile, and answers are looked up with it in mind.</p>
+        <ul class="editions">
+          <li>WoW: Forever</li>
+          <li>Retail (Midnight)</li>
+          <li>Classic Era</li>
+          <li>Classic Hardcore</li>
+          <li>Season of Discovery</li>
+          <li>Burning Crusade Classic Anniversary</li>
+          <li>Mists of Pandaria Classic</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section soft" id="pricing">
+      <div class="wrap">
+        <h2>Pricing</h2>
+        <span class="notice">Beta pricing. Plans and prices may change before paid plans open.</span>
+        <div class="plans">
+          <article class="plan">
+            <h3>Free</h3>
+            <p class="price">$0</p>
+            <p class="allowance">A small monthly allowance of questions</p>
+            <p>Enough to try it on your next few quests. No card needed.</p>
+            <div class="plan-cta"><a class="button" role="link" aria-disabled="true" title="Coming soon">Download the beta for Windows</a></div>
+          </article>
+          <article class="plan featured">
+            <h3>Adventurer</h3>
+            <p class="price">$4.99 <small>/ month</small></p>
+            <p class="allowance">150 credits each month</p>
+            <p>For regular play: a quest or profession question whenever you're stuck.</p>
+            <div class="plan-cta"><span class="soon">Coming soon</span></div>
+          </article>
+          <article class="plan">
+            <h3>Explorer</h3>
+            <p class="price">$9.99 <small>/ month</small></p>
+            <p class="allowance">400 credits each month</p>
+            <p>For leveling alts, chasing professions, and plenty of deep dives.</p>
+            <div class="plan-cta"><span class="soon">Coming soon</span></div>
+          </article>
+        </div>
+        <div class="credit-notes">
+          <p><strong>How credits work.</strong> A Quick Answer costs 1 credit. Deep Research, which digs through more sources for tricky questions, costs 3.</p>
+          <p><strong>Failed requests are free.</strong> If something goes wrong and you don't get an answer, no credits are used.</p>
+          <p><strong>Cancel anytime.</strong> Paid plans are billed monthly in US dollars through Stripe. You can cancel from your customer portal, and your plan runs to the end of the month you paid for.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="wrap">
+        <h2>Questions</h2>
+        <div class="faq">
+          <details>
+            <summary>Windows says &ldquo;Windows protected your PC.&rdquo; Is that normal?</summary>
+            <div>
+              <p>Yes. The beta isn't code-signed yet, so Windows SmartScreen shows a blue warning the first time you open it. Click <strong>More info</strong>, then <strong>Run anyway</strong>. You only need to do this once.</p>
+            </div>
+          </details>
+          <details>
+            <summary>What happens to my questions?</summary>
+            <div>
+              <p>There's no account, just an anonymous random id for each install. Your question goes through our server to the AI service and web search that find your answer, and usage sharing stays off unless you turn it on. <a href="privacy.html">Read the privacy policy</a>.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Is GuideWisp allowed?</summary>
+            <div>
+              <p>GuideWisp is a separate Windows app. It doesn't read the game's memory, automate anything or interact with the game client, and there's no add-on. In that way it's a lot like having a guide open in a browser window.</p>
+              <p>That said, Blizzard hasn't reviewed or approved GuideWisp, and their rules are theirs to decide. If you're ever unsure, check Blizzard's own policies.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Does it work in fullscreen?</summary>
+            <div>
+              <p>Set WoW to Windowed or Windowed (Fullscreen). Exclusive fullscreen hides the GuideWisp window.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Can I get a refund?</summary>
+            <div>
+              <p>Credits aren't refunded for answers, but if an answer is wrong, please tap <strong>Report a problem</strong>; every report is read by hand. Failed requests never cost anything. Billing mistakes, like a double charge or a charge after you cancelled, are refunded if you email us within 14 days. <a href="refunds.html">See the refund policy</a>.</p>
+            </div>
+          </details>
+          <details id="contact">
+            <summary>How do I get in touch?</summary>
+            <div>
+              <p>Email <a href="mailto:hello@guidewisp.com">hello@guidewisp.com</a>. GuideWisp is made by one independent developer, so it's a real person who'll read it.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer>GuideWisp is an independent tool and isn't affiliated with or endorsed by Blizzard Entertainment.</footer>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <ul class="footer-links">
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="refunds.html">Refunds</a></li>
+        <li><a href="mailto:hello@guidewisp.com">Contact</a></li>
+      </ul>
+      <p>GuideWisp is an independent tool and isn't affiliated with or endorsed by Blizzard Entertainment. World of Warcraft is a trademark of Blizzard Entertainment, Inc.</p>
+      <p>&copy; 2026 GuideWisp &middot; <a href="mailto:hello@guidewisp.com">hello@guidewisp.com</a></p>
+    </div>
+  </footer>
 </body>
 </html>
